@@ -5,12 +5,11 @@ import { Observable } from 'rxjs';
 import { SpaceImagesService, SpaceImage } from '../space-images.service';
 
 @Component({
-  selector: 'eva-example-image-gallery',
-  templateUrl: './example-image-gallery.component.html',
-  styleUrls: ['./example-image-gallery.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [NgFor, AsyncPipe]
+    selector: 'eva-example-image-gallery',
+    templateUrl: './example-image-gallery.component.html',
+    styleUrls: ['./example-image-gallery.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [NgFor, AsyncPipe]
 })
 export default class ExampleImageGalleryComponent {
 

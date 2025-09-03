@@ -5,12 +5,11 @@ import { Observable } from 'rxjs';
 import { SpaceImagesService, SpaceImage } from '../space-images.service';
 
 @Component({
-  selector: 'eva-example-spanning',
-  templateUrl: './example-spanning.component.html',
-  styleUrls: ['./example-spanning.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [NgFor, AsyncPipe]
+    selector: 'eva-example-spanning',
+    templateUrl: './example-spanning.component.html',
+    styleUrls: ['./example-spanning.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [NgFor, AsyncPipe]
 })
 export default class ExampleSpanningComponent {
 

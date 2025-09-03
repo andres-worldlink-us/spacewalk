@@ -6,12 +6,11 @@ const bigStep = 5;
 const smallStep = 1;
 
 @Component({
-  selector: 'eva-example-chessboard',
-  templateUrl: './example-chessboard.component.html',
-  styleUrls: ['./example-chessboard.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [NgClass, NgFor]
+    selector: 'eva-example-chessboard',
+    templateUrl: './example-chessboard.component.html',
+    styleUrls: ['./example-chessboard.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [NgClass, NgFor]
 })
 export default class ExampleChessboardComponent implements OnInit {
 
