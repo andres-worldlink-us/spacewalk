@@ -84,10 +84,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "spacewalk:build:production"
+              "buildTarget": "spacewalk:build:production"
             },
             "development": {
-              "browserTarget": "spacewalk:build:development"
+              "buildTarget": "spacewalk:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -95,7 +95,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "spacewalk:build"
+            "buildTarget": "spacewalk:build"
           }
         },
         "test": {
