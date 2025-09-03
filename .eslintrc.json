@@ -9,7 +9,9 @@
         "*.ts"
       ],
       "parserOptions": {
-        "project": ["tsconfig.(app|spec).json"]
+        "project": [
+          "tsconfig.(app|spec).json"
+        ]
       },
       "extends": [
         "eslint:recommended",
@@ -24,30 +26,34 @@
         "@typescript-eslint/no-extraneous-class": "off",
         "@angular-eslint/prefer-on-push-component-change-detection": "off",
         "@angular-eslint/prefer-output-readonly": "off",
-
         "@angular-eslint/component-selector": [
           "error",
           {
-            "type": ["element", "attribute"],
-            "prefix": ["app", "eva"],
+            "type": [
+              "element",
+              "attribute"
+            ],
+            "prefix": [
+              "app",
+              "eva"
+            ],
             "style": "kebab-case"
           }
         ],
-
         "@angular-eslint/directive-selector": [
           "error",
           {
-            "type": ["element", "attribute"],
-            "prefix": ["app", "eva"],
+            "type": [
+              "element",
+              "attribute"
+            ],
+            "prefix": [
+              "app",
+              "eva"
+            ],
             "style": "kebab-case"
           }
         ],
-
-        // @angular-eslint/sort-ngmodule-metadata-arrays is supposed to
-        // eventually be replaced by @angular-eslint/sort-imports-metadata,
-        // at which point this rule may be reinstated (especially if it
-        // allows for import groups). Here's the related issue:
-        // https://github.com/angular-eslint/angular-eslint/issues/1232
         "@angular-eslint/sort-ngmodule-metadata-arrays": "off"
       }
     },
@@ -59,8 +65,6 @@
         "plugin:@angular-eslint/template/recommended"
       ],
       "rules": {
-        "@angular-eslint/template/accessibility-elements-content": "error",
-        "@angular-eslint/template/accessibility-table-scope": "error",
         "@angular-eslint/template/banana-in-box": "error",
         "@angular-eslint/template/button-has-type": "error",
         "@angular-eslint/template/no-any": "error",
@@ -71,27 +75,26 @@
         "@angular-eslint/template/no-interpolation-in-attributes": "error",
         "@angular-eslint/template/no-negated-async": "error",
         "@angular-eslint/template/no-positive-tabindex": "error",
-
         "@angular-eslint/template/conditional-complexity": [
           "error",
           {
             "maxComplexity": 3
           }
         ],
-
         "@angular-eslint/template/cyclomatic-complexity": [
           "error",
           {
             "maxComplexity": 3
           }
         ],
-
         "@angular-eslint/template/no-inline-styles": [
           "error",
           {
             "allowBindToStyle": true
           }
-        ]
+        ],
+        "@angular-eslint/template/elements-content": "error",
+        "@angular-eslint/template/table-scope": "error"
       }
     }
   ]
