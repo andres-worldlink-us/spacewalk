@@ -5,12 +5,11 @@ import { Observable } from 'rxjs';
 import { SpaceImagesService, SpaceImage } from '../space-images.service';
 
 @Component({
-  selector: 'eva-example-overlap',
-  templateUrl: './example-overlap.component.html',
-  styleUrls: ['./example-overlap.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [NgFor, AsyncPipe]
+    selector: 'eva-example-overlap',
+    templateUrl: './example-overlap.component.html',
+    styleUrls: ['./example-overlap.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [NgFor, AsyncPipe]
 })
 export default class ExampleOverlapComponent {
 

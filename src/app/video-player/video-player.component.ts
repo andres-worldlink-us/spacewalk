@@ -5,12 +5,11 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { SpaceVideo } from '../space-videos.service';
 
 @Component({
-  selector: 'eva-video-player',
-  templateUrl: './video-player.component.html',
-  styleUrls: ['./video-player.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [NgIf]
+    selector: 'eva-video-player',
+    templateUrl: './video-player.component.html',
+    styleUrls: ['./video-player.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [NgIf]
 })
 export class VideoPlayerComponent {
 

@@ -4,12 +4,11 @@ import { NgFor } from '@angular/common';
 import { PlayingCardComponent } from '../playing-card/playing-card.component';
 
 @Component({
-  selector: 'eva-example-playing-cards',
-  templateUrl: './example-playing-cards.component.html',
-  styleUrls: ['./example-playing-cards.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [NgFor, PlayingCardComponent]
+    selector: 'eva-example-playing-cards',
+    templateUrl: './example-playing-cards.component.html',
+    styleUrls: ['./example-playing-cards.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [NgFor, PlayingCardComponent]
 })
 export default class ExamplePlayingCardsComponent {
 

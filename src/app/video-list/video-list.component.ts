@@ -5,12 +5,11 @@ import { VideoThumbnailComponent } from '../video-thumbnail/video-thumbnail.comp
 import { SpaceVideo } from '../space-videos.service';
 
 @Component({
-  selector: 'eva-video-list',
-  templateUrl: './video-list.component.html',
-  styleUrls: ['./video-list.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [NgFor, VideoThumbnailComponent]
+    selector: 'eva-video-list',
+    templateUrl: './video-list.component.html',
+    styleUrls: ['./video-list.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [NgFor, VideoThumbnailComponent]
 })
 export class VideoListComponent {
   @Input() videoData: SpaceVideo[] = [];

@@ -2,12 +2,11 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { NgFor } from '@angular/common';
 
 @Component({
-  selector: 'eva-example-blocks',
-  templateUrl: './example-blocks.component.html',
-  styleUrls: ['./example-blocks.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [NgFor]
+    selector: 'eva-example-blocks',
+    templateUrl: './example-blocks.component.html',
+    styleUrls: ['./example-blocks.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [NgFor]
 })
 export default class ExampleBlocksComponent {
 

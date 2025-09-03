@@ -6,12 +6,11 @@ import { Observable } from 'rxjs';
 import { SpaceImagesService, SpaceImage } from '../space-images.service';
 
 @Component({
-  selector: 'eva-example-full-viewport',
-  templateUrl: './example-full-viewport.component.html',
-  styleUrls: ['./example-full-viewport.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [RouterLink, NgFor, AsyncPipe]
+    selector: 'eva-example-full-viewport',
+    templateUrl: './example-full-viewport.component.html',
+    styleUrls: ['./example-full-viewport.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [RouterLink, NgFor, AsyncPipe]
 })
 export default class ExampleFullViewportComponent {
 
