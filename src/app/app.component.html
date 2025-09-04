@@ -1,1 +1,7 @@
+<button class="menu-button" (click)="toggleSideNav()" aria-label="Open navigation menu">
+  ☰
+</button>
+
+<eva-side-navigation [isOpen]="isSideNavOpen" (closePanel)="closeSideNav()"></eva-side-navigation>
+
 <router-outlet />

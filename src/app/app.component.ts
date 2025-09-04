@@ -3,6 +3,7 @@ import { Router, RouterOutlet, ActivatedRoute } from '@angular/router';
 
 import { SpacewalkRouteData } from './spacewalk-route-types';
 import { lastFirstChild } from './utils';
+import SideNavigationComponent from './side-navigation/side-navigation.component';
 
 @Component({
     selector: 'app-root',
@@ -10,14 +11,24 @@ import { lastFirstChild } from './utils';
     styleUrls: ['./app.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
     standalone: true,
-    imports: [RouterOutlet]
+    imports: [RouterOutlet, SideNavigationComponent]
 })
 export class AppComponent {
+
+  isSideNavOpen = false;
 
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute
   ) { }
+
+  toggleSideNav() {
+    this.isSideNavOpen = !this.isSideNavOpen;
+  }
+
+  closeSideNav() {
+    this.isSideNavOpen = false;
+  }
 
   @HostListener('window:keydown', ['$event'])
   keyEvent(event: KeyboardEvent) {
