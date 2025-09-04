@@ -1,0 +1,14 @@
+<div class="backdrop" *ngIf="isOpen" (click)="onBackdropClick()"></div>
+<nav class="side-panel" [class.open]="isOpen">
+  <div class="panel-content">
+    <h2>Navigation</h2>
+    <a 
+      *ngFor="let item of menuItems" 
+      [routerLink]="'/' + item.path"
+      (click)="onLinkClick()"
+      class="nav-link"
+    >
+      {{ item.data?.teaser }}
+    </a>
+  </div>
+</nav>

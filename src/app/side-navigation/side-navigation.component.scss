@@ -1,0 +1,58 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.side-panel {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: black;
+  background-image: url('/assets/misc/starfield.png');
+  background-size: contain;
+  transition: left 0.3s ease;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.side-panel.open {
+  left: 0;
+}
+
+.panel-content {
+  padding: 20px;
+}
+
+.panel-content h2 {
+  color: #ffd54e;
+  text-shadow: 0 0 20px black;
+  margin-bottom: 20px;
+  font-size: 150%;
+}
+
+.nav-link {
+  display: block;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 20px black;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: cornsilk;
+  box-shadow: 0 0 20px 5px cornsilk;
+  text-shadow: none;
+}
