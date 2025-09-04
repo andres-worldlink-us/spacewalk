@@ -8,6 +8,7 @@ import { SpaceVideo } from '../space-videos.service';
     templateUrl: './video-thumbnail.component.html',
     styleUrls: ['./video-thumbnail.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [NgIf]
 })
 export class VideoThumbnailComponent {

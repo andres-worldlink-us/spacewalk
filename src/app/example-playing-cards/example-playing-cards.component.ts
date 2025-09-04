@@ -8,6 +8,7 @@ import { PlayingCardComponent } from '../playing-card/playing-card.component';
     templateUrl: './example-playing-cards.component.html',
     styleUrls: ['./example-playing-cards.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [NgFor, PlayingCardComponent]
 })
 export default class ExamplePlayingCardsComponent {

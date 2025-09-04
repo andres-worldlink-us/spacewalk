@@ -10,6 +10,7 @@ const smallStep = 1;
     templateUrl: './example-chessboard.component.html',
     styleUrls: ['./example-chessboard.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [NgClass, NgFor]
 })
 export default class ExampleChessboardComponent implements OnInit {

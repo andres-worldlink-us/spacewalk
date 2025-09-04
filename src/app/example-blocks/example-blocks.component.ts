@@ -6,6 +6,7 @@ import { NgFor } from '@angular/common';
     templateUrl: './example-blocks.component.html',
     styleUrls: ['./example-blocks.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [NgFor]
 })
 export default class ExampleBlocksComponent {

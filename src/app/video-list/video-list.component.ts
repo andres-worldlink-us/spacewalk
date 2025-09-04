@@ -9,6 +9,7 @@ import { SpaceVideo } from '../space-videos.service';
     templateUrl: './video-list.component.html',
     styleUrls: ['./video-list.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [NgFor, VideoThumbnailComponent]
 })
 export class VideoListComponent {

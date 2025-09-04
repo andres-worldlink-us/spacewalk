@@ -9,6 +9,7 @@ import { lastFirstChild } from './utils';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [RouterOutlet]
 })
 export class AppComponent {

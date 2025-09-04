@@ -11,6 +11,7 @@ import { SpaceVideosService, SpaceVideo } from '../space-videos.service';
     templateUrl: './example-video-viewer.component.html',
     styleUrls: ['./example-video-viewer.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [VideoListComponent, VideoPlayerComponent, AsyncPipe]
 })
 export default class ExampleVideoViewerComponent {
