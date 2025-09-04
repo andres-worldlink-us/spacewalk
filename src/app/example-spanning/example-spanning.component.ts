@@ -9,6 +9,7 @@ import { SpaceImagesService, SpaceImage } from '../space-images.service';
     templateUrl: './example-spanning.component.html',
     styleUrls: ['./example-spanning.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [NgFor, AsyncPipe]
 })
 export default class ExampleSpanningComponent {

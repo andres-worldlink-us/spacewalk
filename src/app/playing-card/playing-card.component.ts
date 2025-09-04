@@ -31,6 +31,7 @@ const rankToNumberOfPips: Record<string, number> = {
     templateUrl: './playing-card.component.html',
     styleUrls: ['./playing-card.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [NgClass, NgIf, NgFor]
 })
 export class PlayingCardComponent implements OnInit {

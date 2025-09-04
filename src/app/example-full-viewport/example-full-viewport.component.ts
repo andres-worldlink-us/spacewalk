@@ -10,6 +10,7 @@ import { SpaceImagesService, SpaceImage } from '../space-images.service';
     templateUrl: './example-full-viewport.component.html',
     styleUrls: ['./example-full-viewport.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [RouterLink, NgFor, AsyncPipe]
 })
 export default class ExampleFullViewportComponent {

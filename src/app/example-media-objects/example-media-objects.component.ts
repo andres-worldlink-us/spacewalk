@@ -11,6 +11,7 @@ import { shuffleArrayInPlace } from '../utils';
     templateUrl: './example-media-objects.component.html',
     styleUrls: ['./example-media-objects.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [NgFor, MediaObjectComponent, AsyncPipe]
 })
 export default class ExampleMediaObjectsComponent {

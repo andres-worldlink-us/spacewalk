@@ -9,6 +9,7 @@ import { SpaceImagesService, SpaceImage } from '../space-images.service';
     templateUrl: './example-overlap.component.html',
     styleUrls: ['./example-overlap.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [NgFor, AsyncPipe]
 })
 export default class ExampleOverlapComponent {

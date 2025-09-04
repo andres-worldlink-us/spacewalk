@@ -9,6 +9,7 @@ import { SpacewalkRoutes } from '../spacewalk-route-types';
     templateUrl: './main-menu.component.html',
     styleUrls: ['./main-menu.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [RouterLink, NgFor]
 })
 export default class MainMenuComponent {

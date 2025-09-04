@@ -9,6 +9,7 @@ import { SpaceImagesService, SpaceImage } from '../space-images.service';
     templateUrl: './example-image-gallery.component.html',
     styleUrls: ['./example-image-gallery.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
     imports: [NgFor, AsyncPipe]
 })
 export default class ExampleImageGalleryComponent {
